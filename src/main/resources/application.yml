@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: firstApp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Gestion
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+    hibernate:
+      ddl-auto: create-drop
